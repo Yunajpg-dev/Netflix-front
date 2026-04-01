@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="catalogo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-left">
+            <img class="logo" src="../assets/Netflix.png" alt="Netflix">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="http://127.0.0.1:5500/catalogo/catalogo.html" class="active" id="btn-inicio">Inicio</a></li>
+                    <li><a href="#" id="btn-series">Series</a></li>
+                    <li><a href="#" id="btn-filmes">Filmes</a></li>
+                    <li><a href="#" id="btn-jogos">Jogos</a></li>
+                    <li><a href="" id="btn-bombando">Bombando</a></li>
+                    <li><a href="#" id="btn-minha-lista">Minha lista</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="search-box" id="search-box">
+                <button class="search-toggle" id="search-toggle" aria-label="Pesquisar filme ou serie" type="button">
+                    <i class="fas fa-search icon"></i>
+                </button>
+                <input class="search-input" id="search-input" type="search" placeholder="Pesquisar filme ou serie" aria-label="Pesquisar filme ou serie">
+            </div>
+            <a href="../index.html" class="kids-link">Seu nome</a>
+            <div class="nav-notification">
+                <i class="fas fa-bell icon"></i>
+                <span class="notification-badge">5</span>
+            </div>
+            <div class="profile-dropdown">
+                <button class="profile-menu" id="profile-menu-toggle" type="button" aria-label="Abrir menu do perfil" aria-expanded="false">
+                    <img class="profile-icon" alt="perfil do usuario" src=" ">
+                    <i class="fas fa-caret-down icon profile-caret"></i>
+                </button>
+                <div class="profile-dropdown-menu" id="profile-dropdown-menu"></div>
+            </div>
+            <button class="tema" id="toggleTheme" type="button" aria-label="Alternar tema">Modo claro</button>
+        </div>
+    </header>
+
+    <!-- Modal para imagem do perfil -->
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Imagem do perfil">
+        </div>
+    </div>
+
+    <!-- Sliders Container -->
+    <main class="sliders-container" id="main-content">
+        <!-- Javascript will inject the rows here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="titulo-ajuda">Ajuda</p>
+            <ul class="footer-links">
+                <li><a href="https://help.netflix.com/pt/node/28092?q=Perguntas%20frequentes" target="_blank">Perguntas frequentes</a></li>
+                <li><a href="https://help.netflix.com/pt" target="_blank">Centro de ajuda</a></li>
+                <li><a href="https://help.netflix.com/pt/node/116380?q=Conta" target="_blank">Conta</a></li>
+                <li><a href="https://help.netflix.com/pt/node/85?q=Imprensa" target="_blank">Imprensa</a></li>
+                <li><a href="https://help.netflix.com/pt/node/134250?q=Relacoes%20com%20investidores" target="_blank">Relacoes com investidores</a></li>
+                <li><a href="https://help.netflix.com/pt/legal/preview-club?q=Carreiras" target="_blank">Carreiras</a></li>
+                <li><a href="https://help.netflix.com/pt/node/14361" target="_blank">Formas de assistir</a></li>
+                <li><a href="https://help.netflix.com/pt/legal/termsofuse" target="_blank">Termos de uso</a></li>
+                <li><a href="https://help.netflix.com/pt/legal/privacy" target="_blank">Privacidade</a></li>
+                <li><a href="https://help.netflix.com/pt/node/124516?q=Preferencias%20de%20cookies" target="_blank">Preferencias de cookies</a></li>
+                <li><a href="https://help.netflix.com/pt/node/134094" target="_blank">Informacoes corporativas</a></li>
+                <li><a href="https://help.netflix.com/pt/contactus" target="_blank">Entre em contato</a></li>
+                <li><a href="https://help.netflix.com/pt/node/116584?q=Teste%20de%20velocidade" target="_blank">Teste de velocidade</a></li>
+                <li><a href="https://help.netflix.com/pt/node/24852?q=Avisos%20legais" target="_blank">Avisos legais</a></li>
+                <li><a href="http://127.0.0.1:5500/catalogo/catalogo.html" target="_blank" id="footer-inicio">So na Netflix</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

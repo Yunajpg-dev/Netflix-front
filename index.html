@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seleção de perfil para Netflix, apresentando quatro perfis de usuário com imagens e descrições, permitindo aos 
+    usuários escolherem seu perfil para acessar o catálogo de filmes e séries.">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="netflix-header">
+        <div class="logo-container">
+            <img class="logo" src="assets/Netflix.png" alt="Netflix">
+        </div>
+        <button id="toggleTheme" class="theme-toggle" type="button" aria-label="Alternar tema">Modo claro</button>
+    </header>
+    <main>
+        <h1>Quem está assistindo?</h1>
+        <section class="container" aria-label="Seleção de perfis de usuário">
+            <div class="profile-card">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <article class="profile">
+                        <figure>
+                            <img src="assets/perfil 1.jpg" alt="O protagonista de Round 6, vestindo o agasalho 456, encara 
+                            a câmera em destaque enquanto é cercado por uma multidão de jogadores uniformizados e guardas 
+                            mascarados sob uma estrutura com os símbolos geométricos da série.">
+                            <figcaption><span class="profile-name">Perfil 1</span></figcaption>
+                        </figure>
+                    </article>
+                </a>
+                <button class="edit-profile" aria-label="Editar nome do perfil">✏️</button>
+            </div>
+
+            <div class="profile-card">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <article class="profile">
+                        <figure>
+                            <img src="assets/perfil 2.jpg" alt="A jogadora 067 de Round 6 encara a câmera com uma expressão 
+                            exausta e resiliente, vestindo seu uniforme verde numerado entre dois guardas sob os ícones 
+                            luminosos do jogo.">
+                            <figcaption><span class="profile-name">Perfil 2</span></figcaption>
+                        </figure>
+                    </article>
+                </a>
+                <button class="edit-profile" aria-label="Editar nome do perfil">✏️</button>
+            </div>
+
+            <div class="profile-card">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <article class="profile">
+                        <figure>
+                            <img src="assets/perfil 3.jfif" alt="Retrato em close de Thomas Shelby, da série Peaky Blinders, 
+                            com seu característico corte de cabelo curto, olhar fixo, terno escuro e um cigarro na boca.">
+                            <figcaption><span class="profile-name">Perfil 3</span></figcaption>
+                        </figure>
+                    </article>
+                </a>
+                <button class="edit-profile" aria-label="Editar nome do perfil">✏️</button>
+            </div>
+
+            <div class="profile-card">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <article class="profile">
+                        <figure>
+                            <img src="assets/images.jfif" alt="Retrato da personagem Beth Harmon, de O Gambito de 
+                            Rainha, destacando seu marcante cabelo ruivo ondulado e olhar intenso sob uma iluminação suave.">
+                            <figcaption><span class="profile-name">Perfil 4</span></figcaption>
+                        </figure>
+                    </article>
+                </a>
+                <button class="edit-profile" aria-label="Editar nome do perfil">✏️</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de edição de perfil -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <h2>Editar Nome do Perfil</h2>
+            <input type="text" id="profile-name-input" placeholder="Digite o novo nome" maxlength="20">
+            <div class="modal-buttons">
+                <button class="modal-btn cancel" onclick="closeModal()">Cancelar</button>
+                <button class="modal-btn save" onclick="saveProfileName()">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
